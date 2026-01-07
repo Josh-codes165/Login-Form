@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+}
+
+.nav-links {
+  display: none;
+  gap: 70px;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.menu-toggle {
+  display: block;
+  font-size: 24px;
+  background-color: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-links.open {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-top: 0;
+  }
+  .menu-toggle {
+    display: none;
+}
+}
